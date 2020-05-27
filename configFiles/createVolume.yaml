@@ -12,8 +12,8 @@ spec:
   accessModes:
     - ReadWriteMany
   hostPath:
-    path: "/tmp"
-
+    #path: "/tmp"
+    path: "/mnt/sharedfolder"
 ---
 kind: PersistentVolumeClaim
 apiVersion: v1
@@ -29,3 +29,4 @@ spec:
   selector:
     matchLabels:
       name: sharedvolume
+© 2020 GitHub, Inc.
